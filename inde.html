@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/eca38bc02d.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- header part -->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h1><span style="color: red; font-size: 90px;">B</span>adri.</h1>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Protofolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Fullstack Java Developer</p>
+                <h1>Hi, I'm <span style="color:#ff004f;">Badrinadh</span> <br>From India</h1>
+            </div>
+        </div>
+    </div>
+    <!-- ---------------about--------------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/badri1.jpeg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        Being a Non-IT background student, i had started my career towards IT sector and gained the basic knowledge about programming by self-motivation. As i am much passionate towards programming i am currently looking for opportunity where i can utilize my
+                        knowledge and skills.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links " onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links " onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <!-- <ul>
+                            <li><span>Web Development</span> <br>Web app Development</li>
+                            <li><span>Java</span> <br> Fullstack website Development</li>
+                            <li><span>Mysql/MongoDB</span> <br> Database Development</li>
+                        </ul> -->
+                        <div class="progress-bars-wrapper">
+                            <div class="progress-bar">
+                                <p class="progress-text">
+                                    HTML
+                                    <span>97</span>%
+                                </p>
+                                <div class="progress-percent"></div>
+                            </div>
+
+
+                            <div class="progress-bar">
+                                <p class="progress-text">
+                                    CSS
+                                    <span>89</span>%
+                                </p>
+                                <div class="progress-percent"></div>
+                            </div>
+
+
+                            <div class="progress-bar">
+                                <p class="progress-text">
+                                    JavaScript
+                                    <span>85</span>%
+                                </p>
+                                <div class="progress-percent"></div>
+                            </div>
+
+
+                            <div class="progress-bar">
+                                <p class="progress-text">
+                                    JAVA
+                                    <span>92</span>%
+                                </p>
+                                <div class="progress-percent"></div>
+                            </div>
+
+
+                            <div class="progress-bar">
+                                <p class="progress-text">
+                                    React JS
+                                    <span>80</span>%
+                                </p>
+                                <div class="progress-percent"></div>
+                            </div>
+
+
+                            <div class="progress-bar">
+                                <p class="progress-text">
+                                    Node JS
+                                    <span>82</span>%
+                                </p>
+                                <div class="progress-percent"></div>
+                            </div>
+
+
+                            <div class="progress-bar">
+                                <p class="progress-text">
+                                    MongoDB
+                                    <span>62</span>%
+                                </p>
+                                <div class="progress-percent"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2022-Current</span> <br>Java Fullstack Developer at wipro</li>
+                            <li><span>February 2022 - june 2022</span> <br>Data integration intern at cognizant</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2022</span> <br>B.tech(Electrical and Electronic Engineering) from Anurag group of Institutions, Hyderabad</li>
+                            <li><span>2018</span> <br>Intermediate from Narayana Junior College, Hyderabad</li>
+                            <li><span>2016</span> <br> SSC from Sri Chaitanya High School, Hyderabad</li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- --------------------------------services----------------------------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro voluptate rem eveniet reiciendis molestiae consequuntur natus illo vero soluta pariatur, sunt est repellat dignissimos nulla quos vel officia blanditiis at.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro voluptate rem eveniet reiciendis molestiae consequuntur natus illo vero soluta pariatur, sunt est repellat dignissimos nulla quos vel officia blanditiis at.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro voluptate rem eveniet reiciendis molestiae consequuntur natus illo vero soluta pariatur, sunt est repellat dignissimos nulla quos vel officia blanditiis at.</p>
+                    <a href="#">Learn More</a>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-- -----------------------------------------portfolio------------------------------------ -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png" alt="">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>the App connects you to the talanted people around the world. Download ot from playstore</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png" alt="">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>the App connects you to the talanted people around the world. Download ot from playstore</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png" alt="">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>the App connects you to the talanted people around the world. Download ot from playstore</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+</body>
+
+</html>
