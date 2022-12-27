@@ -17,13 +17,15 @@
         <div class="container">
             <nav>
                 <h1><span style="color: red; font-size: 90px;">B</span>adri.</h1>
-                <ul>
+                <ul id="sidemenu" style="right: -200px;">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
                     <li><a href="#">Services</a></li>
                     <li><a href="#">Protofolio</a></li>
                     <li><a href="#">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
                 </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
             </nav>
             <div class="header-text">
                 <p>Fullstack Java Developer</p>
@@ -50,18 +52,18 @@
                         <p class="tab-links " onclick="opentab('education')">Education</p>
                     </div>
                     <div class="tab-contents active-tab" id="skills">
-                        <!-- <ul>
+                        <ul>
                             <li><span>Web Development</span> <br>Web app Development</li>
                             <li><span>Java</span> <br> Fullstack website Development</li>
                             <li><span>Mysql/MongoDB</span> <br> Database Development</li>
-                        </ul> -->
-                        <div class="progress-bars-wrapper">
+                        </ul>
+                        <!-- <div class="progress-bars-wrapper">
                             <div class="progress-bar">
                                 <p class="progress-text">
                                     HTML
                                     <span>97</span>%
                                 </p>
-                                <div class="progress-percent"></div>
+                                <div class="progress-percent"></div> 
                             </div>
 
 
@@ -117,7 +119,7 @@
                                 </p>
                                 <div class="progress-percent"></div>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                     <div class="tab-contents" id="experience">
                         <ul>
