@@ -136,9 +136,10 @@
                     </div>
                     <div class="tab-contents" id="education">
                         <ul>
-                            <li><span>2022</span> <br>Master Of Engineering from University Of Windsor ,Windsor,
+                            <li><span>2023-current</span> <br>Master Of Engineering from University Of Windsor ,Windsor,
                                 Ontario,Canada.</li>
-                            <li><span>2022</span> <br>B.tech(Electrical and Electronic Engineering) from Anurag group of
+                            <li><span>2018-22</span> <br>B.tech(Electrical and Electronic Engineering) from Anurag group
+                                of
                                 Institutions, Hyderabad,India.</li>
                             <li><span>2018</span> <br>Intermediate from Narayana Junior College, Hyderabad,India.</li>
                             <li><span>2016</span> <br> SSC from Sri Chaitanya High School, Hyderabad,India.</li>
@@ -318,7 +319,6 @@
 
     form.addEventListener('submit', e => {
         e.preventDefault()
-        form.reset();
         msg.innerHTML = "Thanks for reaching out. I'll get back to you soon."
         fetch(scriptURL, {
             method: 'POST',
@@ -326,10 +326,10 @@
         })
             .then(response => {
                 // msg.innerHTML = "Message sent successfully"
-                // setTimeout(function () {
-                //     msg.innerHTML = ""
-                // }, 1000)
-
+                setTimeout(function () {
+                    msg.innerHTML = ""
+                }, 1000)
+                form.reset();
             })
             .catch(error => console.error('Error!', error.message))
     })
