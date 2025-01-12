@@ -31,20 +31,5 @@ function isInViewport(element) {
 }
 
 // Function to trigger the animation
-function loadProgressBars() {
-  const skillSection = document.querySelector(".skill");
-  console.log(skillSection);
-  if (isInViewport(skillSection)) {
-    document.querySelector(".html").style.width = "90%";
-    document.querySelector(".css").style.width = "90%";
-    document.querySelector(".js").style.width = "90%";
-    document.querySelector(".angular").style.width = "90%";
-    document.querySelector(".react").style.width = "90%";
-  }
-}
 
 // Event listener for scrolling
-window.addEventListener("scroll", loadProgressBars);
-
-// Also call the function initially in case the section is already in view on page load
-loadProgressBars();
