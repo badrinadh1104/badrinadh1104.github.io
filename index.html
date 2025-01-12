@@ -67,66 +67,63 @@
                             <li><span>Java</span> <br> Fullstack website Development</li>
                             <li><span>Mysql/MongoDB</span> <br> Database Development</li>
                         </ul> -->
-                        <div class="progress-bars-wrapper">
-                            <div class="progress-bar">
-                                <p class="progress-text">
-                                    HTML & CSS
-                                    <span>90</span>%
-                                </p>
-                                <div class="progress-percent" data-progress="90"></div>
-                            </div>
+                        <div class="skill">
+                            <!-- <h1>my skills</h1> -->
+                            <!-- <li>
+                                <h3>HTML CSS and JS</h3>
+                                <span class="bar"><span class="html"></span></span>
+                            </li>
+                            <li>
+                                <h3>Angular</h3>
+                                <span class="bar"><span class="angular"></span></span>
+                            </li>
+                            <li>
+                                <h3>React</h3>
+                                <span class="bar"><span class="react"></span></span>
+                            </li>
+                            <li>
+                                <h3>Core Java</h3>
+                                <span class="bar"><span class="java"></span></span>
+                            </li>
+                            <li>
+                                <h3>.NET(c#)</h3>
+                                <span class="bar"><span class="dotnet"></span></span>
+                            </li>
+                            <li>
+                                <h3>Devops</h3>
+                                <span class="bar"><span class="devops"></span></span>
+                            </li> -->
 
-                            <div class="progress-bar">
-                                <p class="progress-text">
-                                    JavaScript
-                                    <span>65</span>%
-                                </p>
-                                <div class="progress-percent" data-progress="65"></div>
-                            </div>
+                            <ul>
+                                <li>
+                                    <h3>HTML/CSS & JS</h3>
+                                    <span class="bar"><span class="html" data-progress="90"></span></span>
+                                </li>
+                                <li>
+                                    <h3>React</h3>
+                                    <span class="bar"><span class="css" data-progress="65"></span></span>
+                                </li>
+                                <li>
+                                    <h3>Angular</h3>
+                                    <span class="bar"><span class="js" data-progress="70"></span></span>
+                                </li>
+                                <li>
+                                    <h3>.Net(c#)</h3>
+                                    <span class="bar"><span class="angular" data-progress="75"></span></span>
+                                </li>
+                                <li>
+                                    <h3>Core Java</h3>
+                                    <span class="bar"><span class="react" data-progress="85"></span></span>
+                                </li>
+                                <li>
+                                    <h3>Devops</h3>
+                                    <span class="bar"><span class="devops" data-progress="65"></span></span>
+                                </li>
+                            </ul>
 
 
-                            <div class="progress-bar">
-                                <p class="progress-text">
-                                    Java
-                                    <span>80</span>%
-                                </p>
-                                <div class="progress-percent" data-progress="80"></div>
-                            </div>
-
-
-                            <div class="progress-bar">
-                                <p class="progress-text">
-                                    Angular
-                                    <span>60</span>%
-                                </p>
-                                <div class="progress-percent" data-progress="60"></div>
-                            </div>
-
-
-                            <div class="progress-bar">
-                                <p class="progress-text">
-                                    Python
-                                    <span>70</span>%
-                                </p>
-                                <div class="progress-percent" data-progress="70"></div>
-                            </div>
-
-
-                            <div class="progress-bar">
-                                <p class="progress-text">
-                                    MongoDB
-                                    <span>65</span>%
-                                </p>
-                                <div class="progress-percent" data-progress="65"></div>
-                            </div>
-                            <div class="progress-bar">
-                                <p class="progress-text">
-                                    MySQL
-                                    <span>80</span>%
-                                </p>
-                                <div class="progress-percent" data-progress="80"></div>
-                            </div>
                         </div>
+
                     </div>
                     <div class="tab-contents" id="experience">
                         <ul>
@@ -272,37 +269,90 @@
 </body>
 <script>
     var sidemenu = document.getElementById("sidemenu");
-    const progressbars = document.querySelectorAll(".progress-percent")
-    const skillsection = document.getElementById("skills")
+    // const progressbars = document.querySelectorAll(".progress-percent")
+    // const skillsection = document.getElementById("skills")
 
+    // function showprogress() {
+    //     progressbars.forEach(progressbar => {
+    //         const value = progressbar.dataset.progress;
+    //         progressbar.style.opacity = 1;
+    //         progressbar.style.width = `${value}%`
+    //         progressbar.style.transition = `all 1s ease-in-out`
+
+    //     })
+    // }
+
+    // function hideprogress() {
+    //     progressbars.forEach(
+    //         p => {
+    //             p.style.opacity = 0;
+    //             p.style.width = 0;
+    //         }
+    //     )
+    // }
+
+    // window.addEventListener('scroll', () => {
+    //     const sectionpos = skillsection.getBoundingClientRect().top;
+    //     const screenPos = window.innerHeight / 2;
+    //     if (sectionpos < screenPos) {
+    //         showprogress();
+    //     } else {
+    //         hideprogress();
+    //     }
+    // })
+
+
+
+    // new Code 
+    // Select all progress bars in the skill section
+    const progressbars = document.querySelectorAll('.bar span');
+
+    // Select the skill section itself
+    const skillsection = document.querySelector('.skill');
+
+    // Function to show the progress bars and animate them
     function showprogress() {
         progressbars.forEach(progressbar => {
+            // Get the progress value from the data attribute (e.g., data-progress="90")
             const value = progressbar.dataset.progress;
+            // Show the progress bar with animation
             progressbar.style.opacity = 1;
-            progressbar.style.width = `${value}%`
-            progressbar.style.transition = `all 1s ease-in-out`
-
-        })
+            progressbar.style.width = `${value}%`; // Update the width based on data-progress
+            progressbar.style.transition = `all 1s ease-in-out`; // Smooth transition
+        });
     }
 
+    // Function to hide the progress bars (reset to initial state)
     function hideprogress() {
-        progressbars.forEach(
-            p => {
-                p.style.opacity = 0;
-                p.style.width = 0;
-            }
-        )
+        progressbars.forEach(progressbar => {
+            progressbar.style.opacity = 0; // Hide progress bar
+            progressbar.style.width = 0; // Reset width to 0
+        });
     }
 
+    // Scroll event listener to check when the skill section is in the viewport
     window.addEventListener('scroll', () => {
-        const sectionpos = skillsection.getBoundingClientRect().top;
-        const screenPos = window.innerHeight / 2;
-        if (sectionpos < screenPos) {
+        const sectionPos = skillsection.getBoundingClientRect().top;
+        const screenPos = window.innerHeight / 1.5; // Trigger when section is at least halfway visible
+
+        // Show progress when section is in view, otherwise hide it
+        if (sectionPos < screenPos) {
             showprogress();
         } else {
             hideprogress();
         }
-    })
+    });
+
+    // Optional: Call function initially if the section is already in view on page load
+    window.addEventListener('load', () => {
+        const sectionPos = skillsection.getBoundingClientRect().top;
+        const screenPos = window.innerHeight / 1.5;
+        if (sectionPos < screenPos) {
+            showprogress();
+        }
+    });
+
+    // new Code ends
 
     function openmenu() {
         sidemenu.style.right = "0px";
