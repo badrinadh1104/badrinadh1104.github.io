@@ -33,3 +33,20 @@ function isInViewport(element) {
 // Function to trigger the animation
 
 // Event listener for scrolling
+window.addEventListener("load", () => {
+  document.body.classList.add("loaded");
+});
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("visible");
+      }
+    });
+  },
+  { threshold: 0.2 }
+);
+
+document.querySelectorAll(".about-col-1, .about-col-2").forEach((el) => {
+  observer.observe(el);
+});

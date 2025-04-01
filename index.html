@@ -18,17 +18,18 @@
             <nav>
                 <h1><span style="color: red; font-size: 90px;">B</span>adri.</h1>
                 <ul id="sidemenu">
-                    <li><a href="#header">Home</a></li>
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#services">Services</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="blogpage.html">Blog's</a></li>
                     <li><a href="#contact">Contact</a></li>
                     <i class="fas fa-times" onclick="closemenu()"></i>
                 </ul>
                 <i class="fas fa-bars" onclick="openmenu()"></i>
             </nav>
             <div class="header-text">
-                <p>Fullstack Java Developer</p>
+                <span class="role"></span>
                 <h1>Hi, I'm <span style="color:#ff004f;">Badrinadh</span> <br>From India</h1>
             </div>
         </div>
@@ -239,6 +240,25 @@
             <a href="https://github.com/badrinadh1104" class="btn">See More</a>
         </div>
     </div>
+    <!-- ----------------------------------------CERTIFICATIONS ---------------------------- -->
+    <div class="Education">
+        <div class="container">
+            <h1 class="sub-title">My Certifications</h1>
+            <div class="education-content">
+                <img src="./images/Coursera_Python.jpg" alt="">
+                <img src="./images/DevIncept appericiation.jpg" alt="">
+                <img src="./images/Hackerrank.png" alt="">
+                <img src="./images/html.jpg" alt="">
+                <img src="./images/MachineLearningTraining.jpg" alt="">
+                <img src="./images/wipro2.jpg" alt="">
+                <img src="./images/wipro.jpg" alt="">
+                <img src="./images/Gmail - Internship Completion mailer_pages-to-jpg-0001.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    </div>
+
+
     <!-- ----------------------------------------contact---------------------------- -->
     <div id="contact">
         <div class="container">
@@ -273,6 +293,8 @@
             <p>Copyright &#169; 2022 Created By Badrinadh Ande </p>
         </div>
     </div>
+    <!-- <embed src="images/english.pdf" type="application/pdf" width="100%" height="600px" /> -->
+    <!-- <iframe src="../badrinadh1104.github.io/images/english.pdf" width="100%" height="600px"></iframe> -->
 </body>
 <script>
     var sidemenu = document.getElementById("sidemenu");
@@ -391,6 +413,21 @@
             })
             .catch(error => console.error('Error!', error.message))
     })
+</script>
+
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<script>
+    var typed = new Typed(".role", {
+        strings: [
+            "Java Full Stack Developer",
+            "FrontEnd Developer",
+            ".Net Fullstack Developer",
+            "Tutor",
+        ],
+        typeSpeed: 150,
+        backSpeed: 150,
+        loop: true
+    });
 </script>
 
 

@@ -16,11 +16,18 @@ body {
 }
 
 #header {
+  opacity: 0;
+  transform: translateY(-50px);
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
   width: 100%;
   height: 100vh;
   background: url(images/badrii.jpeg);
   background-size: cover;
   background-position: center;
+}
+body.loaded #header {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 nav {
@@ -118,6 +125,19 @@ nav ul li :hover {
   word-spacing: 1.5px;
 }
 
+.about-col-1,
+.about-col-2 {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
+body.loaded .about-col-1,
+body.loaded .about-col-2 {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 .sub-title {
   font-size: 60px;
   font-weight: 600;
@@ -209,6 +229,25 @@ nav ul li :hover {
   transition: all 1s ease-in-out;
 }
 
+/* ------------------------------------Education---------------------------------- */
+.Education {
+  width: 100%;
+}
+
+.education-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.education-content img {
+  max-width: 80%;
+  max-height: 550px;
+  animation: Appear linear;
+  animation-timeline: view();
+  animation-range: entry 20% cover 45%;
+  box-shadow: 0 0 10px #0ef;
+  margin: 30px 0;
+}
 /* ------------------------------------services---------------------------------- */
 
 #services {
@@ -635,3 +674,13 @@ nav .fas {
     width: 75%;
   }
 } */
+@keyframes Appear {
+  0% {
+    opacity: 0;
+    scale: 0.2;
+  }
+  100% {
+    opacity: 1;
+    scale: 1;
+  }
+}
