@@ -597,6 +597,16 @@ nav .fas {
     rgba(236, 0, 140, 1) 0%,
     rgba(252, 103, 103, 1) 100%
   );
+
+  .education-content img {
+    max-width: 350px;
+    max-height: 500px;
+    animation: Appear linear;
+    animation-timeline: view();
+    animation-range: entry 20% cover 45%;
+    box-shadow: 0 0 10px #0ef;
+    margin: 30px 0;
+  }
 }
 /* 
 .html {
